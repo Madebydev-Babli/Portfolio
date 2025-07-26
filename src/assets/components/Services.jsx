@@ -70,7 +70,7 @@ const Services = () => {
         className="mt-16"
       >
         <a
-          href="https://www.fiverr.com/babli-chauhan" //
+          href="https://www.fiverr.com/babli_chauhan" 
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold text-lg px-8 py-4 rounded-full shadow-md transition"

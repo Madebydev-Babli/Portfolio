@@ -8,8 +8,6 @@ import Navbar from "./assets/components/Navbar";
 import Services from "./assets/components/Services";
 
 
-
-
 const router = createBrowserRouter([
   {
     path: "/",
