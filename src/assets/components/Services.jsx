@@ -5,22 +5,22 @@ import { Code2, Smartphone, LayoutDashboard } from "lucide-react";
 const services = [
   {
     icon: <Code2 size={32} className="text-cyan-400" />,
-    title: "Landing Page",
-    desc: "High-converting animated page for products, creators, and businesses.",
-    price: "$49",
+    title: "Animated Landing Page",
+    desc: "Clean, responsive landing page with typewriter effect, scroll-to-top, and modern animations.",
+    price: "$29",
   },
   {
     icon: <Smartphone size={32} className="text-cyan-400" />,
-    title: "Full Responsive Website",
-    desc: "Multi-page mobile-first website with smooth UX & fast performance.",
-    price: "$99",
+    title: "Modern Multi-page Website",
+    desc: "Fully responsive multi-page website with smooth UI, optimized layout, and mobile-first design.",
+    price: "$59",
   },
   {
     icon: <LayoutDashboard size={32} className="text-cyan-400" />,
-    title: "UI/UX Design + Build",
-    desc: "Custom layout design + coded React build with animations.",
-    price: "$149",
-  }
+    title: "React UI Project + Animations",
+    desc: "Custom React interface with routing, transitions, cart/login features & Framer Motion animation.",
+    price: "$79",
+  },
 ];
 
 const Services = () => {
