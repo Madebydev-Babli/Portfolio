@@ -84,7 +84,6 @@ const Contact = () => {
           <div className="mt-8">
             <button
               type="submit"
-              onClick={toast.success("Form is submitted")}
               className="bg-cyan-500 hover:bg-cyan-600 w-full text-white font-bold py-3 rounded-lg transition-all shadow-lg"
             >
               🚀 Send Message

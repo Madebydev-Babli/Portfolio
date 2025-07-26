@@ -4,7 +4,7 @@ Welcome to *MadebyBabli*, my personal portfolio built to showcase my modern UI p
 
 ## 🔗 Live Website
 
-👉 [Visit Portfolio Live](https://madebybabli-landing-page.netlify.app)
+👉 [Visit Portfolio Live](https://madebybabli-portfolio.netlify.app)
 
 ---
 
