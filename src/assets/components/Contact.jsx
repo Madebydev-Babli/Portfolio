@@ -30,7 +30,7 @@ const Contact = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="max-w-3xl mx-auto bg-gray-900 p-10 rounded-2xl border border-gray-800 shadow-lg"
+          className="max-w-2xl mx-auto bg-gray-900 p-10 rounded-2xl border border-gray-800 shadow-lg"
         >
           {/* Name & Email */}
           <div className="grid md:grid-cols-2 gap-6">

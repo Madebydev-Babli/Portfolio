@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Code2, Smartphone, LayoutDashboard } from "lucide-react";
+import { Link } from 'react-router-dom'
 
 const services = [
   {
@@ -52,13 +53,13 @@ const Services = () => {
             <h3 className="text-xl font-semibold text-cyan-300 mb-2">{service.title}</h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">{service.desc}</p>
             <p className="text-lg font-bold text-green-400 mb-4">{service.price}</p>
-            <a
-              href="#contact"
+            <Link to='/contact'
               className="mt-auto inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2 px-4 rounded-full transition"
             >
               Book Now
-            </a>
+            </Link>
           </motion.div>
+
         ))}
       </div>
 

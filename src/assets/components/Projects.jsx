@@ -2,15 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import ecommerce from "../images/ecommerce.jpg"
 import login from "../images/login.webp"
-import landing from "../images/landing.webp"
+import book from "../images/book.webp"
 
 const projects = [
   {
-    title: "Animated Landing Page",
-    description: "Sleek and responsive landing page built using pure HTML, CSS and JavaScript - smooth animations and clean layout ideal for personal brands or startup intros",
-    image: landing,
-    live: "https://madebybabli-landing-page.netlify.app",
-    code: "https://github.com/madebydev-babli/clean-landing-page",
+    title: "Animated Booking Site",
+    description: "Modern and responsive booking interface with smooth animations, perfect for service-based businesses.",
+    image: book,
+    live: "https://madebybabli-booknow.netlify.app",
+    code: "https://github.com/madebydev-babli/booknow",
   },
   {
     title: "E-commerce UI",
