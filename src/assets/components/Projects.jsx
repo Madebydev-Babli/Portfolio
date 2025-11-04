@@ -1,27 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ecommerce from "../images/ecommerce.jpg"
-import login from "../images/login.webp"
-import book from "../images/book.webp"
+import ecommerce from "../images/ecommerce.jpg";
+import login from "../images/login.webp";
+import book from "../images/book.webp";
 
 const projects = [
   {
     title: "Animated Booking Site",
-    description: "Modern and responsive booking interface with smooth animations, perfect for service-based businesses.",
+    description:
+      "Modern and responsive booking interface with smooth animations, perfect for service-based businesses.",
     image: book,
     live: "https://madebybabli-booknow.netlify.app",
     code: "https://github.com/madebydev-babli/booknow",
   },
   {
-    title: "E-commerce UI",
-    description: "Responsive E-commerce interface with product cards, cart functionality, quantity control, and Animated UI built using React, Tailwind CSS and Framer Motion.",
+    title: "MERN AI-powered Ecommerce Website (with Payment Integration)",
+    description:
+      "A full-stack MERN project featuring AI-powered product descriptions (Gemini), secure admin/user login, and Razorpay payment gateway. Beautiful UI, animated transitions, and robust management for both admins and users.",
     image: ecommerce,
-    live: "https://madebybabli-ecommerce.netlify.app",
-    code: "https://github.com/madebydev-babli/ecommerce-ui-madebybabli",
+    // Two live links!
+    liveAdmin: "https://ecommerce-website-mern-1-admin.onrender.com", // example admin URL
+    liveUser: "https://ecommerce-website-mern-frontend-vc2w.onrender.com",   // example user URL
+    code: "https://github.com/madebydev-babli/Ecommerce-Website-MERN",
   },
   {
     title: "Signup/Login UI",
-    description: "Modern Login and Signup interrface with protected routing and localStorage authentication. Created with React, Tailwind CSS and Framer Motion",
+    description:
+      "Modern Login and Signup interface with protected routing and localStorage authentication. Created with React, Tailwind CSS and Framer Motion.",
     image: login,
     live: "https://madebybabli-login-signup.netlify.app",
     code: "https://github.com/madebydev-babli/Login-Signup-ui-madebybabli",
@@ -54,18 +59,41 @@ const Projects = () => {
           >
             <img src={project.image} alt={project.title} className="w-full h-60 object-cover" />
 
-            <div className="p-6 flex flex-col justify-between h-[230px]">
+            <div className="p-6 flex flex-col justify-between h-[260px]">
               <h3 className="text-xl font-semibold text-cyan-300 mb-2">{project.title}</h3>
               <p className="text-gray-400 text-sm mb-4">{project.description}</p>
-              <div className="flex gap-4 mt-auto">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-cyan-500 hover:bg-cyan-600 text-white text-sm px-4 py-2 rounded-full"
-                >
-                  Live Demo
-                </a>
+              <div className="flex gap-4 mt-auto flex-wrap">
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-cyan-500 hover:bg-cyan-600 text-white text-sm px-4 py-2 rounded-full"
+                  >
+                    Live Demo
+                  </a>
+                )}
+                {/* Custom: Show Admin/User live links if present */}
+                {project.liveAdmin && (
+                  <a
+                    href={project.liveAdmin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-cyan-500 hover:bg-cyan-600 text-white text-sm px-4 py-2 rounded-full"
+                  >
+                    Admin Demo
+                  </a>
+                )}
+                {project.liveUser && (
+                  <a
+                    href={project.liveUser}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full"
+                  >
+                    User Demo
+                  </a>
+                )}
                 <a
                   href={project.code}
                   target="_blank"
