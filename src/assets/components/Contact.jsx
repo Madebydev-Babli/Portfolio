@@ -131,7 +131,7 @@ const Contact = () => {
           </div>
 
           <div className="text-sm text-gray-500 text-center md:text-right">
-            © {new Date().getFullYear()} MadebyBabli. All rights reserved.
+            © {new Date().getFullYear()} BuiltbyBabli. All rights reserved.
           </div>
         </motion.div>
       </footer>
