@@ -18,9 +18,8 @@ const projects = [
     description:
       "A full-stack MERN project featuring AI-powered product descriptions (Gemini), secure admin/user login, and Razorpay payment gateway. Beautiful UI, animated transitions, and robust management for both admins and users.",
     image: ecommerce,
-    // Two live links!
-    liveAdmin: "https://ecommerce-website-mern-1-admin.onrender.com", // example admin URL
-    liveUser: "https://ecommerce-website-mern-frontend-vc2w.onrender.com",   // example user URL
+    liveAdmin: "https://ecommerce-website-mern-1-admin.onrender.com",
+    liveUser: "https://ecommerce-website-mern-frontend-vc2w.onrender.com",
     code: "https://github.com/madebydev-babli/Ecommerce-Website-MERN",
   },
   {
@@ -62,38 +61,43 @@ const Projects = () => {
             <div className="p-6 flex flex-col justify-between h-[260px]">
               <h3 className="text-xl font-semibold text-cyan-300 mb-2">{project.title}</h3>
               <p className="text-gray-400 text-sm mb-4">{project.description}</p>
-              <div className="flex gap-4 mt-auto flex-wrap">
-                {project.live && (
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-cyan-500 hover:bg-cyan-600 text-white text-sm px-4 py-2 rounded-full"
-                  >
-                    Live Demo
-                  </a>
+              
+              <div className="flex gap-3 mt-auto flex-wrap">
+                {/* Show Admin/User Demo if both exist */}
+                {project.liveAdmin && project.liveUser ? (
+                  <>
+                    <a
+                      href={project.liveAdmin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-cyan-500 hover:bg-cyan-600 text-white text-sm px-4 py-2 rounded-full"
+                    >
+                      Admin Demo
+                    </a>
+                    <a
+                      href={project.liveUser}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full"
+                    >
+                      User Demo
+                    </a>
+                  </>
+                ) : (
+                  // Otherwise, show a single Live Demo link
+                  project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-cyan-500 hover:bg-cyan-600 text-white text-sm px-4 py-2 rounded-full"
+                    >
+                      Live Demo
+                    </a>
+                  )
                 )}
-                {/* Custom: Show Admin/User live links if present */}
-                {project.liveAdmin && (
-                  <a
-                    href={project.liveAdmin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-cyan-500 hover:bg-cyan-600 text-white text-sm px-4 py-2 rounded-full"
-                  >
-                    Admin Demo
-                  </a>
-                )}
-                {project.liveUser && (
-                  <a
-                    href={project.liveUser}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full"
-                  >
-                    User Demo
-                  </a>
-                )}
+
+                {/* Code Link always present */}
                 <a
                   href={project.code}
                   target="_blank"
