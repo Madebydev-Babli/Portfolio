@@ -54,15 +54,15 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
-            className="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all"
+            className="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all flex flex-col"
           >
             <img src={project.image} alt={project.title} className="w-full h-60 object-cover" />
 
-            <div className="p-6 flex flex-col justify-between h-[260px]">
-              <h3 className="text-xl font-semibold text-cyan-300 mb-2">{project.title}</h3>
-              <p className="text-gray-400 text-sm mb-4">{project.description}</p>
+            <div className="p-6 flex flex-col gap-4 flex-1">
+              <h3 className="text-xl font-semibold text-cyan-300">{project.title}</h3>
+              <p className="text-gray-400 text-sm">{project.description}</p>
               
-              <div className="flex gap-3 mt-auto flex-wrap">
+              <div className="flex gap-3 flex-wrap mt-auto">
                 {/* Show Admin/User Demo if both exist */}
                 {project.liveAdmin && project.liveUser ? (
                   <>
@@ -96,7 +96,6 @@ const Projects = () => {
                     </a>
                   )
                 )}
-
                 {/* Code Link always present */}
                 <a
                   href={project.code}
