@@ -59,11 +59,13 @@ const About = () => (
       transition={{ delay: 0.3, duration: 0.8 }}
       className="max-w-2xl text-gray-300 text-sm md:text-base mb-10"
     >
-      Hi, I'm Babli! I build full-stack projects using the MERN stack—MongoDB, Express, React, and Node.js—plus animation and modern styling techniques.
+      I'm Babli—a <span className="text-cyan-300 font-semibold">full-stack web developer</span> focused on building robust, scalable apps using the <span className="text-green-300 font-semibold">MERN stack</span> and modern JavaScript tools.
       <br /><br />
-      My passion is crafting interactive, responsive UIs and seamless e-commerce sites. I enjoy bringing real-world ideas to life, learning about APIs, cloud deployment, and all things modern JavaScript.
+      My expertise includes responsive UI development, dynamic product features, animated interfaces, and integrating APIs for real-world impact. Whether it’s business dashboards, e-commerce stores, or interactive web apps, I enjoy crafting solutions that are both user-friendly and maintainable.
       <br /><br />
-      Let’s make something modern, fast and beautiful — together!
+      <span className="text-cyan-400 font-medium">Continuous learning is core to my journey—I'm excited to keep growing, master cloud & DevOps, and (soon) take on SaaS product engineering challenges.</span>
+      <br /><br />
+      Let's build, learn, and innovate—one project at a time.
     </motion.p>
 
     {/* Tech Skills */}
