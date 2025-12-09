@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md px-6 md:px-12 py-4 flex justify-between items-center border-b border-white/10">
-      <h1 className="text-cyan-400 text-xl font-bold">?BuiltbyBabli</h1>
+      <h1 className="text-cyan-400 text-xl font-bold">BuiltbyBabli</h1>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-8 text-cyan-300 font-medium text-sm md:text-base">
