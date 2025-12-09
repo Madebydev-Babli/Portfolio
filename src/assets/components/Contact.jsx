@@ -101,7 +101,7 @@ const Contact = () => {
           className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold text-cyan-400">MadebyBabli</h3>
+            <h3 className="text-xl font-bold text-cyan-400">BuiltbyBabli</h3>
             <p className="text-gray-400 text-sm">Designs that speak, code that performs.</p>
           </div>
 
