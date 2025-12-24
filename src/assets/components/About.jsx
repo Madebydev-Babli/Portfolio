@@ -60,9 +60,8 @@ const About = () => (
     >
       I'm Babli—an an aspiring <span className="text-cyan-300 font-semibold">full-stack web developer</span> focused on building building real-world web applications using the <span className="text-green-300 font-semibold">MERN stack</span> and modern JavaScript tools.
       <br /><br />
-      My experience includes responsive UI development, dynamic product features, animated interfaces, and integrating APIs to solve practical problems. Whether it’s dashboards, e-commerce flows, or interactive web apps, I enjoy building solutions that are user-friendly and maintainable.
-      <br /><br />
-      <span className="text-cyan-400 font-medium">Continuous learning is core to my journey—I'm focused on strengthening my backend skills and gradually exploring cloud technologies as I grow.</span>
+      My experience includes responsive UI development, dynamic product features, animated interfaces, and integrating APIs to solve practical problems. I’ve worked on authentication flows, admin panels, and payment integrations in my projects.
+      <span className="text-cyan-400 font-medium">I enjoy learning by building and improving applications step by step, with a focus on clean code and maintainable structure.</span>
       <br /><br />
       Let's build, learn, and improve—one project at a time.
     </motion.p>
