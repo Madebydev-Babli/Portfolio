@@ -1,49 +1,65 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ecommerce from "../images/ecommerce.jpg";
-import login from "../images/login.webp";
-import book from "../images/book.webp";
+import booking from "../images/book.webp";
+import printing from "../images/login.webp";
 
 const projects = [
   {
-    title: "Animated Booking Site",
+    title: "MERN E-commerce Platform (Admin Panel & Payments)",
     description:
-      "Modern and responsive booking interface with smooth animations, perfect for service-based businesses.",
-    image: book,
-    live: "https://madebybabli-booknow.netlify.app",
-    code: "https://github.com/madebydev-babli/booknow",
-  },
-  {
-    title: "MERN AI-powered Ecommerce Website (with Payment Integration)",
-    description:
-      "A full-stack MERN project featuring AI-powered product descriptions (Gemini), secure admin/user login, and Razorpay payment gateway. Beautiful UI, animated transitions, and robust management for both admins and users.",
+      "A full-stack e-commerce application built using the MERN stack. Implements role-based authentication (admin/user), secure REST APIs, product and order management, cart functionality, and Razorpay payment integration. Includes a dedicated admin panel for managing products and orders. An AI API is used to assist admins by generating product descriptions during product creation.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT Authentication",
+      "REST APIs",
+      "Razorpay",
+    ],
     image: ecommerce,
     liveAdmin: "https://ecommerce-website-mern-1-admin.onrender.com",
     liveUser: "https://ecommerce-website-mern-frontend-vc2w.onrender.com",
     code: "https://github.com/madebydev-babli/Ecommerce-Website-MERN",
+    featured: true,
   },
   {
-    title: "Signup/Login UI",
+    title: "Animated Booking Website",
     description:
-      "Modern Login and Signup interface with protected routing and localStorage authentication. Created with React, Tailwind CSS and Framer Motion.",
-    image: login,
+      "A responsive booking interface designed for service-based businesses. Focuses on clean UI, smooth animations, and mobile-friendly layout. Built to demonstrate component-based design and user interaction using modern frontend tools.",
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    image: booking,
+    live: "https://madebybabli-booknow.netlify.app",
+    code: "https://github.com/madebydev-babli/booknow",
+  },
+  {
+    title: "Printing Business Website UI",
+    description:
+      "A modern business website UI with WhatsApp call-to-action buttons and a dynamic price calculator. Designed to improve customer engagement and provide quick quotation estimates.",
+    tech: ["React", "Tailwind CSS"],
+    image: printing,
     live: "https://madebybabli-login-signup.netlify.app",
-    code: "https://github.com/madebydev-babli/Login-Signup-ui-madebybabli",
+    code: "https://github.com/madebydev-babli/printingbusiness-ui-madebybabli",
   },
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full px-6 py-20 bg-gradient-to-b from-gray-950 to-black text-white">
+    <section
+      id="projects"
+      className="w-full px-6 py-20 bg-gradient-to-b from-gray-950 to-black text-white"
+    >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center mb-12"
+        className="text-center mb-14"
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">My Projects</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">Projects</h2>
         <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-          A collection of work that showcases my skills in modern web development and UI/UX design.
+          Real-world projects demonstrating my skills in full-stack and frontend
+          web development.
         </p>
       </motion.div>
 
@@ -53,17 +69,49 @@ const Projects = () => {
             key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2 }}
-            className="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all flex flex-col"
+            transition={{ delay: index * 0.15 }}
+            className={`relative bg-gray-900 border rounded-xl overflow-hidden shadow-lg flex flex-col ${
+              project.featured
+                ? "border-cyan-500 shadow-cyan-500/30"
+                : "border-gray-800"
+            }`}
           >
-            <img src={project.image} alt={project.title} className="w-full h-60 object-cover" />
+            {/* Featured Badge */}
+            {project.featured && (
+              <span className="absolute top-4 right-4 bg-cyan-500 text-black text-xs font-semibold px-3 py-1 rounded-full">
+                Featured Project
+              </span>
+            )}
+
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-60 object-cover"
+            />
 
             <div className="p-6 flex flex-col gap-4 flex-1">
-              <h3 className="text-xl font-semibold text-cyan-300">{project.title}</h3>
-              <p className="text-gray-400 text-sm">{project.description}</p>
-              
+              <h3 className="text-xl font-semibold text-cyan-300">
+                {project.title}
+              </h3>
+
+              <p className="text-gray-400 text-sm">
+                {project.description}
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2">
+                {project.tech.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="text-xs bg-gray-800 border border-gray-700 px-2 py-1 rounded-full text-gray-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Links */}
               <div className="flex gap-3 flex-wrap mt-auto">
-                {/* Show Admin/User Demo if both exist */}
                 {project.liveAdmin && project.liveUser ? (
                   <>
                     <a
@@ -84,7 +132,6 @@ const Projects = () => {
                     </a>
                   </>
                 ) : (
-                  // Otherwise, show a single Live Demo link
                   project.live && (
                     <a
                       href={project.live}
@@ -96,7 +143,7 @@ const Projects = () => {
                     </a>
                   )
                 )}
-                {/* Code Link always present */}
+
                 <a
                   href={project.code}
                   target="_blank"
