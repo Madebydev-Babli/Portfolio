@@ -28,7 +28,7 @@ const Home = () => {
           transition={{ delay: 0.5, duration: 0.6 }}
           className="inline-block text-sm md:text-base font-medium text-cyan-300 mb-5 tracking-wide"
         >
-          MERN | AI Integration | Usable Web Interfaces
+          MERN | API Integration | Usable Web Interfaces
         </motion.span>
 
         {/* Brief Professional About */}
