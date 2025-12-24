@@ -20,7 +20,7 @@ const Contact = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Work Together</h2>
           <p className="text-gray-400 max-w-xl mx-auto text-sm md:text-base">
-            Have an idea, a project, or just want to connect? Drop a message — I'll get back to you soon!
+             For job opportunities, freelance projects, or collaborations.
           </p>
         </motion.div>
 
