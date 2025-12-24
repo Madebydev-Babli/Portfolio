@@ -26,7 +26,7 @@ const Navbar = () => {
           <NavLink to="/about" onClick={() => scrollToSection("about")} className="hover:text-cyan-200 transition">ABOUT</NavLink>
         </li>
         <li>
-          <NavLink to="/service" onClick={() => scrollToSection("service")} className="hover:text-cyan-200 transition">SERVICES</NavLink>
+          <NavLink to="/project" onClick={() => scrollToSection("project")} className="hover:text-cyan-200 transition">PROJECTS</NavLink>
         </li>
         <li>
           <NavLink to="/contact" onClick={() => scrollToSection("home")}className="hover:text-cyan-200 transition">CONTACT</NavLink>
@@ -43,7 +43,7 @@ const Navbar = () => {
         <ul className="absolute top-16 right-6 bg-gray-900 border border-gray-700 rounded-xl px-6 py-4 flex flex-col gap-4 text-sm text-cyan-200 w-40 shadow-xl md:hidden animate-slide-down z-50">
           <li><NavLink to="/" onClick={() => scrollToSection("home")}>HOME</NavLink></li>
           <li><NavLink to="/about" onClick={() => setIsOpen(false)}>ABOUT</NavLink></li>
-          <li><NavLink to="/service" onClick={() => setIsOpen(false)}>SERVICES</NavLink></li>
+          <li><NavLink to="/project" onClick={() => setIsOpen(false)}>PROJECT</NavLink></li>
           <li><NavLink to="/contact" onClick={() => setIsOpen(false)}>CONTACT</NavLink></li>
         </ul>
       )}
