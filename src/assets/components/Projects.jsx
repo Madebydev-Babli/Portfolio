@@ -37,10 +37,10 @@ const projects = [
     title: "Printing Business Website UI",
     description:
       "A modern business website UI with WhatsApp call-to-action buttons and a dynamic price calculator. Designed to improve customer engagement and provide quick quotation estimates.",
-    tech: ["React", "Tailwind CSS"],
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
     image: printing,
     live: "https://printingbusiness.netlify.app",
-    code: "https://github.com/madebydev-babli/avon-print",
+    code: "https://github.com/Madebydev-Babli/AvonPrint",
   },
 ];
 
