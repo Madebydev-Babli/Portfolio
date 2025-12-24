@@ -43,17 +43,22 @@ const Home = () => {
         </motion.p>
 
         {/* CTA Button */}
-        <NavLink to="/project" className="inline-block">
-          <motion.button
-            whileHover={{ scale: 1.05, boxShadow: "0 0 15px #22d3ee88" }}
-            whileTap={{ scale: 0.96 }}
-            transition={{ type: "spring", stiffness: 340 }}
-            className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 transition px-5 py-2.5 rounded-full font-semibold text-base shadow-lg outline-none focus:ring-2 focus:ring-green-400"
-            aria-label="View Projects"
-          >
-            <Rocket size={18} /> View Projects
-          </motion.button>
-        </NavLink>
+        <div className="flex gap-4 flex-wrap justify-center">
+  <NavLink to="/project">
+    <motion.button className="...">
+      🚀 View Projects
+    </motion.button>
+  </NavLink>
+
+  <NavLink to="/service">
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      className="border border-cyan-400 text-cyan-300 px-5 py-2.5 rounded-full font-semibold"
+    >
+      💼 For Businesses
+    </motion.button>
+  </NavLink>
+</div>
       </div>
 
       {/* Floating Glow Accent */}
