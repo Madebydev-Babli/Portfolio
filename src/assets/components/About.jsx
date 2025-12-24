@@ -19,7 +19,6 @@ const skills = [
   { icon: <FaNodeJs className="text-green-500" />, name: "Node.js" },
   { icon: <FaDatabase className="text-teal-300" />, name: "MongoDB" },
   { icon: <FaGithub className="text-gray-300" />, name: "GitHub" },
-  { icon: <FaFigma className="text-pink-400" />, name: "Figma" },
 ];
 
 const About = () => (
@@ -59,13 +58,13 @@ const About = () => (
       transition={{ delay: 0.3, duration: 0.8 }}
       className="max-w-2xl text-gray-300 text-sm md:text-base mb-10"
     >
-      I'm Babli—a <span className="text-cyan-300 font-semibold">full-stack web developer</span> focused on building robust, scalable apps using the <span className="text-green-300 font-semibold">MERN stack</span> and modern JavaScript tools.
+      I'm Babli—an an aspiring <span className="text-cyan-300 font-semibold">full-stack web developer</span> focused on building building real-world web applications using the <span className="text-green-300 font-semibold">MERN stack</span> and modern JavaScript tools.
       <br /><br />
-      My expertise includes responsive UI development, dynamic product features, animated interfaces, and integrating APIs for real-world impact. Whether it’s business dashboards, e-commerce stores, or interactive web apps, I enjoy crafting solutions that are both user-friendly and maintainable.
+      My experience includes responsive UI development, dynamic product features, animated interfaces, and integrating APIs to solve practical problems. Whether it’s dashboards, e-commerce flows, or interactive web apps, I enjoy building solutions that are user-friendly and maintainable.
       <br /><br />
-      <span className="text-cyan-400 font-medium">Continuous learning is core to my journey—I'm excited to keep growing, master cloud & DevOps, and (soon) take on SaaS product engineering challenges.</span>
+      <span className="text-cyan-400 font-medium">Continuous learning is core to my journey—I'm focused on strengthening my backend skills and gradually exploring cloud technologies as I grow.</span>
       <br /><br />
-      Let's build, learn, and innovate—one project at a time.
+      Let's build, learn, and improve—one project at a time.
     </motion.p>
 
     {/* Tech Skills */}
