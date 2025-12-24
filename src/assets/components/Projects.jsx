@@ -39,8 +39,8 @@ const projects = [
       "A modern business website UI with WhatsApp call-to-action buttons and a dynamic price calculator. Designed to improve customer engagement and provide quick quotation estimates.",
     tech: ["React", "Tailwind CSS"],
     image: printing,
-    live: "https://madebybabli-login-signup.netlify.app",
-    code: "https://github.com/madebydev-babli/printingbusiness-ui-madebybabli",
+    live: "https://printingbusiness.netlify.app",
+    code: "https://github.com/madebydev-babli/avon-print",
   },
 ];
 
