@@ -55,16 +55,7 @@ const Home = () => {
             <Rocket size={18} /> View Projects
           </motion.button>
         </NavLink>
-
-  <NavLink to="/service">
-    <motion.button
-      whileHover={{ scale: 1.05 }}
-      className="border border-cyan-400 text-cyan-300 px-5 py-2.5 rounded-full font-semibold"
-    >
-      💼 For Businesses
-    </motion.button>
-  </NavLink>
-</div>
+        </div>
       </div>
 
       {/* Floating Glow Accent */}
