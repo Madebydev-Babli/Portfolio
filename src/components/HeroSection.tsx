@@ -95,7 +95,7 @@ export default function HeroSection() {
           <div className="relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white/80 p-6 shadow-[0_25px_70px_rgba(15,23,42,0.08)] dark:border-slate-700/60 dark:bg-slate-900/95">
             <div className="relative h-[420px] w-full rounded-[1.75rem] bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300 dark:from-slate-900 dark:via-slate-800 dark:to-slate-950">
               <Image
-                src="/BABLI.jpeg"
+                src="/Babli.png"
                 alt="Profile image"
                 fill
                 className="object-cover"
