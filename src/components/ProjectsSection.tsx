@@ -163,8 +163,8 @@ const featuredProjectMetrics = [
 ];
 
 const engineeringHighlights = [
-  { value: "6+", label: "Projects Built" },
-  { value: "3", label: "Professional Client Projects" },
+  { value: "10+", label: "Projects Built" },
+  { value: "10+", label: "Professional Client Projects" },
   { value: "3", label: "Major Full Stack Products" },
   { value: "8+", label: "Core Engineering Stacks" },
 ];
