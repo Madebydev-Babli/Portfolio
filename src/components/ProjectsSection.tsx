@@ -164,7 +164,7 @@ const featuredProjectMetrics = [
 
 const engineeringHighlights = [
   { value: "10+", label: "Projects Built" },
-  { value: "10+", label: "Professional Client Projects" },
+  { value: "5+", label: "Professional Client Projects" },
   { value: "3", label: "Major Full Stack Products" },
   { value: "8+", label: "Core Engineering Stacks" },
 ];
@@ -658,7 +658,7 @@ export default function ProjectsSection() {
               {[
                 {
                   title: "Clinic Management System",
-                  progress: "70%",
+                  progress: "50%",
                   description:
                     "Enterprise healthcare platform with secure authentication, appointment scheduling, doctor dashboard, patient management, admin analytics, protected routes, and scalable backend architecture.",
                   completed: [
@@ -674,13 +674,14 @@ export default function ProjectsSection() {
                     "Notifications",
                     "Reports",
                     "Billing",
+                    "UI design",
                   ],
-                  expectedCompletion: "August 2026",
+                  expectedCompletion: "September 2026",
                   badge: "Building",
                 },
                 {
                   title: "AI Job Platform",
-                  progress: "45%",
+                  progress: "15%",
                   description:
                     "AI-powered recruitment platform designed for recruiters and job seekers featuring intelligent resume analysis, ATS scoring, AI job matching, recruiter dashboard, candidate dashboard, interview preparation, and resume generation.",
                   completed: [
@@ -698,7 +699,7 @@ export default function ProjectsSection() {
                     "Candidate Dashboard",
                     "Job Recommendation Engine",
                   ],
-                  expectedCompletion: "September 2026",
+                  expectedCompletion: "October 2026",
                   badge: "Building",
                 },
               ].map((item) => (
@@ -777,7 +778,7 @@ export default function ProjectsSection() {
 
                   <div className="mt-6 flex flex-wrap gap-3">
                     <a
-                      href="https://github.com/madebydev-babli/"
+                      href="https://github.com/madebydev-babli/Healthcare"
                       className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-slate-700/60 dark:bg-slate-900/80 dark:text-slate-200 dark:hover:bg-slate-800"
                     >
                       GitHub
