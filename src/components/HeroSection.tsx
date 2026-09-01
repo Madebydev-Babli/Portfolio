@@ -1,20 +1,23 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const techBadges = [
-  'React',
-  'Next.js',
-  'TypeScript',
-  'Tailwind CSS',
-  'Framer Motion',
-  'Node.js',
-]
+  "React",
+  "Next.js",
+  "Node.js",
+  "MongoDB",
+  "TypeScript",
+  "Express.js",
+];
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative overflow-hidden px-6 pb-24 pt-16 md:pb-32">
+    <section
+      id="home"
+      className="relative overflow-hidden px-6 pb-24 pt-16 md:pb-32"
+    >
       <div className="absolute left-1/2 top-0 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-cyan-400/10 blur-3xl" />
       <div className="mx-auto flex max-w-6xl flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
         <div className="max-w-2xl">
@@ -24,7 +27,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="inline-flex items-center gap-3 rounded-full border border-cyan-400/20 bg-white/80 px-4 py-2 text-sm text-cyan-700 shadow-lg shadow-cyan-400/10 dark:bg-slate-900/80 dark:text-cyan-200"
           >
-            Full Stack Developer · React & Next.js Developer
+            Full-Stack Developer
           </motion.div>
 
           <motion.h1
@@ -33,7 +36,8 @@ export default function HeroSection() {
             transition={{ delay: 0.15, duration: 0.8 }}
             className="mt-8 text-4xl font-semibold leading-tight tracking-[-0.04em] text-slate-900 sm:text-5xl lg:text-6xl dark:text-white"
           >
-            Building modern React applications while growing into a Full Stack Engineer.
+            I build real-world web applications, from frontend interfaces to
+            backend systems.
           </motion.h1>
 
           <motion.p
@@ -42,7 +46,11 @@ export default function HeroSection() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="mt-6 max-w-xl text-base text-slate-600 sm:text-lg dark:text-slate-300"
           >
-            React Developer at Proactii Media LLP. I build production-ready client websites and pursue scalable full-stack, AI-powered applications.
+            I'm a Full-Stack Developer focused on building modern, responsive,
+            and practical web applications using JavaScript, React, Next.js,
+            Node.js, and MongoDB. I enjoy turning ideas and business
+            requirements into functional products with clean interfaces,
+            reliable backend logic, and thoughtful user experiences.
           </motion.p>
 
           <motion.div
@@ -55,19 +63,13 @@ export default function HeroSection() {
               href="#projects"
               className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:bg-cyan-300"
             >
-              View Projects
+              View My Work
             </a>
             <a
               href="#contact"
               className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-cyan-400/60 hover:bg-white dark:border-slate-700 dark:bg-slate-900/85 dark:text-slate-100 dark:hover:bg-slate-800"
             >
-              Resume
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-cyan-400/60 hover:bg-white dark:border-slate-700 dark:bg-slate-900/85 dark:text-slate-100 dark:hover:bg-slate-800"
-            >
-              Contact
+              Contact Me
             </a>
           </motion.div>
 
@@ -78,7 +80,10 @@ export default function HeroSection() {
             className="mt-12 grid max-w-md grid-cols-2 gap-3 sm:grid-cols-3"
           >
             {techBadges.map((badge) => (
-              <div key={badge} className="rounded-2xl border border-slate-200/80 bg-white/70 px-4 py-3 text-center text-sm text-slate-700 dark:border-slate-700/60 dark:bg-slate-900/80 dark:text-slate-200">
+              <div
+                key={badge}
+                className="rounded-2xl border border-slate-200/80 bg-white/70 px-4 py-3 text-center text-sm text-slate-700 dark:border-slate-700/60 dark:bg-slate-900/80 dark:text-slate-200"
+              >
                 {badge}
               </div>
             ))}
@@ -106,5 +111,5 @@ export default function HeroSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

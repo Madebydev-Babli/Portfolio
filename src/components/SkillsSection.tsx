@@ -5,19 +5,23 @@ import { motion } from 'framer-motion'
 const skillGroups = [
   {
     title: 'Frontend',
-    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS'],
+    skills: ['React.js', 'Next.js', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Framer Motion', 'GSAP'],
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Express.js'],
+    skills: ['Node.js', 'Express.js', 'REST APIs', 'Authentication', 'Server-side development'],
   },
   {
     title: 'Database',
-    skills: ['MongoDB', 'PostgreSQL', 'Prisma'],
+    skills: ['MongoDB', 'MongoDB Atlas'],
   },
   {
-    title: 'Tools',
-    skills: ['Git', 'GitHub', 'Postman', 'VS Code'],
+    title: 'Tools & Services',
+    skills: ['Git', 'GitHub', 'Postman', 'Cloudinary', 'Razorpay', 'Vercel', 'Render', 'Netlify'],
+  },
+  {
+    title: 'Development',
+    skills: ['Responsive Web Development', 'API Integration', 'Database Integration', 'Authentication & Authorization', 'Dashboard Development', 'CRUD Operations', 'Third-Party API Integration', 'Deployment & Debugging'],
   },
 ]
 
@@ -28,14 +32,14 @@ export default function SkillsSection() {
         <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.32em] text-cyan-600 dark:text-cyan-400">Skills</p>
-            <h2 className="mt-3 text-4xl font-semibold text-slate-900 sm:text-5xl dark:text-white">Organized for product teams and fast delivery.</h2>
+            <h2 className="mt-3 text-4xl font-semibold text-slate-900 sm:text-5xl dark:text-white">Full-Stack Technology Stack</h2>
           </div>
           <p className="max-w-xl text-sm leading-7 text-slate-600 sm:text-base dark:text-slate-400">
-            Clean skill groups for frontend, backend, database, and tooling.
+            Organized by specialization: frontend interfaces, backend systems, databases, tools, and core development practices.
           </p>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {skillGroups.map((group, index) => (
             <motion.div
               key={group.title}
