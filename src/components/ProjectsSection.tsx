@@ -178,7 +178,18 @@ const projects: Project[] = [
       "Modern full-stack architecture",
     ],
     images: "/private.png",
-    links: [],
+    links: [
+      {
+        label: "Live Demo (In Progress)",
+        href: "https://private-vault-brijioy0d-builtby-babli.vercel.app/",
+        icon: ExternalLink,
+      },
+      {
+        label: "GitHub",
+        href: "https://github.com/Madebydev-babli/Private-Vault",
+        icon: Github,
+      },
+    ],
   },
 ];
 
